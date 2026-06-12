@@ -20,7 +20,7 @@ class DataCleaner:
             if row["project_code"] in seen_codes:
                 duplicates.append(row["id"])
                 continue
-            seen_codes.add(row["project_name"])
+            seen_codes.add(row["project_code"])
 
             original = row.copy()
             row["category"] = CATEGORY_ALIASES.get(row["category"], row["category"])

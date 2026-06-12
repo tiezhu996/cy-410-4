@@ -35,7 +35,7 @@ class Analyzer:
                 buckets["30岁以下"] += 1
             elif age < 45:
                 buckets["30-44岁"] += 1
-            elif age <= 60:
+            elif age < 60:
                 buckets["45-59岁"] += 1
             else:
                 buckets["60岁及以上"] += 1
